@@ -10,7 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { appReducers } from './app.reducer';
-
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,9 @@ import { appReducers } from './app.reducer';
     }),
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue : '/' }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
