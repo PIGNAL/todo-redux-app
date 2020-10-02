@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/todomvc-app-css/index.css"
             ],
             "scripts": []
           },
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "todoapp"
+    }
+  },
+  "defaultProject": "todoapp",
+  "cli": {
+    "analytics": "ee74d776-18c2-4bbc-b8fb-da788a712148"
+  }
 }
